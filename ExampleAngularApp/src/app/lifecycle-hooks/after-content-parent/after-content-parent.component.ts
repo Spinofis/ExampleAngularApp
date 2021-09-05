@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 
 @Component({
@@ -20,7 +20,8 @@ import { Component } from '@angular/core';
     </div>
   </div>
   `,
-  providers: []
+  providers: [],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class AfterContentParentComponent {
   show = true;
