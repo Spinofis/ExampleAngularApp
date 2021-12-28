@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { Test1Module } from '../app/features/test1/test1.module';
 import { ChatExample1RoutingModule } from './chat-example1/chat-example1.routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChatExample1RoutingModule } from './chat-example1/chat-example1.routing
     BrowserModule,
     AppRoutingModule,
     Test1Module,
-    ChatExample1RoutingModule
+    ChatExample1RoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
