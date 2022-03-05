@@ -11,7 +11,7 @@ export class ChatService {
 
     private connection: any;
 
-    readonly SEND_MESSAGE_URL = 'https://localhost:44389/api/message';
+    // readonly SEND_MESSAGE_URL = 'https://localhost:44389/api/message';
     private receivedMessage = new Subject<Message>();
     readonly onReceivedMessage = this.receivedMessage.asObservable();
 
@@ -45,6 +45,7 @@ export class ChatService {
     }
 
     public sendMessage(message: Message) {
-        return this.httpClient.post(this.SEND_MESSAGE_URL, message)
+        this.connection.send("newMessage", message)
+            .then(() => { });
     }
 }

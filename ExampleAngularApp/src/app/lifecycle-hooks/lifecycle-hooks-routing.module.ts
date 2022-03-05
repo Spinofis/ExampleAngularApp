@@ -4,6 +4,7 @@ import { OuterNgOnInitComponent } from "./outer-ng-on-init/outer-ng-on-init.comp
 
 import { OnInitComponent } from "./on-init/on-init.component";
 import { AfterContentParentComponent } from "./after-content-parent/after-content-parent.component";
+import { DoCheckAppComponent } from "./do-check-app/do-check-app.component";
 
 const routes: Routes = [
     {
@@ -13,6 +14,10 @@ const routes: Routes = [
     {
         component: AfterContentParentComponent,
         path: 'after-content'
+    },
+    {
+        component: DoCheckAppComponent,
+        path: 'do-check'
     }
 ];
 

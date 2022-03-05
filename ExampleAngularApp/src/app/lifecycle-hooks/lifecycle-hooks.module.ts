@@ -7,11 +7,21 @@ import { AfterContentComponent } from './after-content/after-content.component';
 import { ChildComponent } from './child/child.component';
 import { AfterContentParentComponent } from './after-content-parent/after-content-parent.component';
 import { FormsModule } from '@angular/forms';
+import { DoCheckAppComponent } from './do-check-app/do-check-app.component';
+import { AComponent } from './do-check-app/a/a.component';
 
 
 
 @NgModule({
-  declarations: [OnInitComponent, OuterNgOnInitComponent, AfterContentComponent, ChildComponent, AfterContentParentComponent],
+  declarations: [
+    OnInitComponent,
+    OuterNgOnInitComponent,
+    AfterContentComponent,
+    ChildComponent,
+    AfterContentParentComponent,
+    DoCheckAppComponent,
+    AComponent
+  ],
   imports: [
     CommonModule,
     LifecycleHooksRoutingModule,

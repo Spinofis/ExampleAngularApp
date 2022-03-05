@@ -29,7 +29,6 @@ export class ChatComponent implements OnInit {
 
   send() {
     let message: Message = { content: this.messageInput, sender: this.nameInput, type: MessageType.out };
-    this.chatService.sendMessage(message)
-      .subscribe()
+    this.chatService.sendMessage(message);
   }
 }
